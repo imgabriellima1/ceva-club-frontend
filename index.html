@@ -8,6 +8,12 @@
     <title>Ceva Club 🍺</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/ceva-logo.svg" type="image/x-icon" />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
 </head>
 
 <body>
@@ -16,36 +22,70 @@
         <button id="menu-toggle" class="menu-toggle">☰</button>
         <div class="menu">
           <a href="#planos">Planos</a>
+            <a href="#sobre">Sobre</a>
           <a href="#footer">Contato</a>
           <button id="theme-switch" class="btn">🌙 Tema Escuro</button>
         </div>
     </nav>
 
     <section id="hero">
-        <h1>Bem-vindo ao Ceva Club 🍺</h1>
-        <p>Receba toda semana uma seleção especial de cervejas artesanais direto na sua porta.</p>
-        <a href="#planos" class="btn">Conheça os Planos</a>
+        <h1 data-aos="fade-up" data-aos-delay="50">Bem-vindo ao Ceva Club</h1>
+        <p data-aos="fade-up" data-aos-delay="100">
+            Transforme toda semana em uma nova descoberta cervejeira com rótulos selecionados, sabores surpreendentes e experiências únicas direto na sua porta.
+        </p>
+        <a href="#planos" class="btn" data-aos="zoom-in-up" data-aos-delay="200">Conheça os Planos</a>
     </section>
+
+    <!-- <section id="comoFunciona">
+        <h2 style="font-size: 2rem; color: var(--ceva-amber-dark); margin-bottom: 2rem;">Como Funciona</h2>
+        <ul>
+            <li class="escolha">
+                <img src="https://cervejabox.vteximg.com.br/arquivos/cervejabox-clube-selecao.png?v=636656095388230000" alt="">
+                <h3>1. Cerveja </h3>
+            </li>
+            <li class="entrega"></li>
+            <li class="degusta"></li>
+        </ul>
+
+    </section> -->
 
     <section id="planos">
         <h2 style="font-size: 2rem; color: var(--ceva-amber-dark); margin-bottom: 2rem;">Escolha seu Plano</h2>
         <div class="planos-container">
-            <div class="plano-card">
+            <div class="plano-card" data-aos="flip-left" data-aos-delay="0">
                 <h3>Plano Degustador</h3>
                 <p>2 cervejas por semana</p>
                 <button class="btn">Assinar</button>
             </div>
-            <div class="plano-card">
+            <div class="plano-card" data-aos="flip-left" data-aos-delay="150">
                 <h3>Plano Cervejeiro</h3>
                 <p>4 cervejas por semana</p>
                 <button class="btn">Assinar</button>
             </div>
-            <div class="plano-card">
+            <div class="plano-card" data-aos="flip-left" data-aos-delay="300">
                 <h3>Plano Mestre</h3>
                 <p>6 cervejas por semana</p>
                 <button class="btn">Assinar</button>
             </div>
         </div>
+    </section>
+
+    <section id="sobre">
+        <h2 style="font-size: 2rem; color: var(--ceva-amber-dark); margin-bottom: 2rem;">Sobre o Ceva Club</h2>
+
+        <div class="sobre-container">
+            <img src="assets/ceva-logo.png" alt="Ceva Club" class="sobre-img">
+            
+            <div class="sobre-text">
+                <p>
+                    O Ceva Club é um clube de assinatura de cervejas artesanais que tem como objetivo proporcionar experiências únicas e surpreendentes para os amantes de cerveja.
+                </p>
+                <p>
+                    No Ceva Club, a cada semana você recebe uma seleção única de cervejas artesanais escolhidas a dedo por especialistas. Mais do que uma assinatura, entregamos experiências, sabores e histórias que transformam seu paladar e sua rotina. Aqui, cada gole é um convite para explorar o mundo cervejeiro com leveza, qualidade e personalidade.
+                </p>
+            </div>
+        </div>
+
     </section>
 
     <footer id="footer">
@@ -55,6 +95,14 @@
 
 
     <script src="index.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: false,
+            mirror: true,
+        });
+    </script>
 
 </body>
 
