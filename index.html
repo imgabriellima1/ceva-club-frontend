@@ -1,0 +1,61 @@
+<!-- Ceva Club - Landing Page (versão sem frameworks) -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ceva Club 🍺</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/ceva-logo.svg" type="image/x-icon" />
+</head>
+
+<body>
+    <nav>
+        <a href="#hero" class="logo"><img src="assets/ceva-logo.png" alt="logo Ceva Club"></a>
+        <button id="menu-toggle" class="menu-toggle">☰</button>
+        <div class="menu">
+          <a href="#planos">Planos</a>
+          <a href="#footer">Contato</a>
+          <button id="theme-switch" class="btn">🌙 Tema Escuro</button>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <h1>Bem-vindo ao Ceva Club 🍺</h1>
+        <p>Receba toda semana uma seleção especial de cervejas artesanais direto na sua porta.</p>
+        <a href="#planos" class="btn">Conheça os Planos</a>
+    </section>
+
+    <section id="planos">
+        <h2 style="font-size: 2rem; color: var(--ceva-amber-dark); margin-bottom: 2rem;">Escolha seu Plano</h2>
+        <div class="planos-container">
+            <div class="plano-card">
+                <h3>Plano Degustador</h3>
+                <p>2 cervejas por semana</p>
+                <button class="btn">Assinar</button>
+            </div>
+            <div class="plano-card">
+                <h3>Plano Cervejeiro</h3>
+                <p>4 cervejas por semana</p>
+                <button class="btn">Assinar</button>
+            </div>
+            <div class="plano-card">
+                <h3>Plano Mestre</h3>
+                <p>6 cervejas por semana</p>
+                <button class="btn">Assinar</button>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <p>© 2025 Ceva Club. Todos os direitos reservados.</p>
+        <p>Desenvolvido com 🍺 e paixão por cervejas artesanais.</p>
+    </footer>
+
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
