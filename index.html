@@ -14,6 +14,11 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+
 </head>
 
 <body>
@@ -24,13 +29,13 @@
           <a href="#planos">Planos</a>
             <a href="#sobre">Sobre</a>
           <a href="#footer">Contato</a>
-          <button id="theme-switch" class="btn">🌙 Tema Escuro</button>
+          <button id="theme-switch" class="btn">🌙 <span class="theme-label">Tema Escuro</span></button>
         </div>
     </nav>
 
     <section id="hero">
-        <h1 data-aos="fade-up" data-aos-delay="50">Bem-vindo ao Ceva Club</h1>
-        <p data-aos="fade-up" data-aos-delay="100">
+        <h1 data-aos="fade-up" data-aos-delay="25">Bem-vindo ao Ceva Club</h1>
+        <p data-aos="fade-up">
             Transforme toda semana em uma nova descoberta cervejeira com rótulos selecionados, sabores surpreendentes e experiências únicas direto na sua porta.
         </p>
         <a href="#planos" class="btn" data-aos="zoom-in-up" data-aos-delay="200">Conheça os Planos</a>
@@ -49,6 +54,46 @@
 
     </section> -->
 
+
+    <!-- Como Funciona -->
+
+      <section id="como-funciona" class="container">
+        <h2 style="font-size: 2rem; color: var(--ceva-amber-dark); margin-bottom: 2rem;">🍻 Como funciona o Ceva Club?</h2>
+        <div class="grid">
+          
+          <!-- Card 1 -->
+          <div class="card">
+            <div class="card-icon">🍺</div>
+            <div class="card-title">Assine seu plano</div>
+            <p class="card-text">Escolha o tipo de experiência que combina com você. São planos semanais cheios de sabor!</p>
+          </div>
+    
+          <!-- Card 2 -->
+          <div class="card">
+            <div class="card-icon">📦</div>
+            <div class="card-title">Receba em casa</div>
+            <p class="card-text">Toda semana, a seleção especial de cervejas chega fresquinha na sua porta.</p>
+          </div>
+    
+          <!-- Card 3 -->
+          <div class="card">
+            <div class="card-icon">🔍</div>
+            <div class="card-title">Explore novos sabores</div>
+            <p class="card-text">Descubra estilos, harmonizações e curiosidades a cada rótulo recebido.</p>
+          </div>
+    
+          <!-- Card 4 -->
+          <div class="card">
+            <div class="card-icon">🤘</div>
+            <div class="card-title">Compartilhe a experiência</div>
+            <p class="card-text">Avalie, comente e troque ideia com a galera da comunidade Ceva Club.</p>
+          </div>
+    
+        </div>
+      </section>
+      
+
+
     <section id="planos">
         <h2 style="font-size: 2rem; color: var(--ceva-amber-dark); margin-bottom: 2rem;">Escolha seu Plano</h2>
         <div class="planos-container">
@@ -57,12 +102,12 @@
                 <p>2 cervejas por semana</p>
                 <button class="btn">Assinar</button>
             </div>
-            <div class="plano-card" data-aos="flip-left" data-aos-delay="150">
+            <div class="plano-card" data-aos="flip-left" data-aos-delay="75">
                 <h3>Plano Cervejeiro</h3>
                 <p>4 cervejas por semana</p>
                 <button class="btn">Assinar</button>
             </div>
-            <div class="plano-card" data-aos="flip-left" data-aos-delay="300">
+            <div class="plano-card" data-aos="flip-left" data-aos-delay="150">
                 <h3>Plano Mestre</h3>
                 <p>6 cervejas por semana</p>
                 <button class="btn">Assinar</button>
@@ -99,7 +144,7 @@
         AOS.init({
             duration: 1000,
             easing: 'ease-in-out',
-            once: false,
+            once: true,
             mirror: true,
         });
     </script>

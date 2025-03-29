@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Ceva Club</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="login-pagige.css">
+
+    <!-- boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    
+    <section id="container" class="container">
+
+        <!-- Criar Conta -->
+        <div class="form-container sign-up">
+            <form>
+                <h1>Criar uma conta:</h1>
+                
+                <div class="social-icons">
+                    <a href="#" class="icon">
+                        <i class='bx bxl-google'></i>                        
+                    </a>
+
+                    <a href="#" class="icon">
+                        <i class="bx bxl-instagram"></i>                        
+                    </a>
+
+                    <a href="#" class="icon">
+                        <i class="bx bxl-github"></i>                        
+                    </a>
+
+                    <a href="#" class="icon">
+                        <i class="bx bxl-linkedin"></i>                        
+                    </a>
+                </div>
+                <span>Ou use seu E-mail para o cadastro: </span>
+                <input type="text" placeholder="Nome">
+                <input type="email" placeholder="E-mail">
+                <input type="password" placeholder="Senha">
+                <button>Cadastrar</button>
+            </form>
+        </div>
+
+        <!-- Entrar -->
+        <div class="form-container sign-in">
+            <form>
+                <h1>Fazer login:</h1>
+                
+                <div class="social-icons">
+                    <a href="#" class="icon">
+                        <i class='bx bxl-google'></i>                        
+                    </a>
+
+                    <a href="#" class="icon">
+                        <i class="bx bxl-instagram"></i>                        
+                    </a>
+
+                    <a href="#" class="icon">
+                        <i class="bx bxl-github"></i>                        
+                    </a>
+
+                    <a href="#" class="icon">
+                        <i class="bx bxl-linkedin"></i>                        
+                    </a>
+                </div>
+                <span>Ou use seu E-mail e senha para se autenticar:</span>
+                <input type="email" placeholder="E-mail">
+                <input type="password" placeholder="Senha">
+
+                <a href="#">Esqueceu a senha?</a>
+
+                <button>Entrar</button>
+            </form>
+        </div>
+
+        <!-- Toggle -->
+        <div class="toggle-container">
+
+            <div class="toggle">
+                <!-- Painel 1 -->
+                <div class="toggle-panel toggle-left">
+                    <h2>É um prazer ter você aqui!</h2>
+                    <p>Para se manter conectado conosco, cadastre se no menu ao lado ou faça login com suas informações clicando no botão abaixo: </p>
+                    <button class="hidden" id="login">Já tenho uma conta</button>
+                </div>
+
+                <!-- Paineil 2 -->
+                <div class="toggle-panel toggle-right">
+                    <h2>Olá, amigo cervejeiro!</h2>
+                    <p>Caso ainda não tenha um cadastro, clique no botão abaixo, insira seus dados e comece sua jornada conosco agora mesmo!</p>
+                    <button class="hidden" id="register">Quero me cadastrar</button>
+                </div>
+            </div>
+
+        </div>
+        <!-- Fim toggle -->
+    </section>
+    
+    <script src="login-page.js"></script>
+
+</body>
+</html>
